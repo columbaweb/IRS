@@ -22,18 +22,17 @@
 </head> 
 
 <body <?php body_class(); ?>>
-   <div id="top">
-      <div class="inner-container">
-         <div class="grid_8 omega">
-            <?php include ('searchform.php'); ?>
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header') ) : ?><?php endif; ?>
-         </div>
-      </div>   
-   </div>
-   <div id="wrapper" class="container_12">   	
-      <header> 
-         <div id="logo" class="grid_3"><a href="<?php echo home_url(); ?>" ><img src="<?php bloginfo( 'template_url' ); ?>/images/bac-sport.png" width="150" height="81" alt="Bac Sport" /></a></div>
-         <?php wp_nav_menu( array( 'theme_location' => 'topnav' ) ); ?>
-      </header>
+	<header>
+		<div class="wrapper">
+			<div id="logo" class="grid_4"><a href="<?php echo home_url(); ?>" ><img src="<?php bloginfo( 'template_url' ); ?>/images/independent-retail-show.png" width="283" height="300" alt="IRS" /></a></div>
+			<div class="grid_8">
+				<div id="header-sidebar">
+					event, social
+				</div>	
+				where....
+			</div>	
+			<?php wp_nav_menu( array( 'theme_location' => 'topnav' ) ); ?>
+		</div>	
+	</header>
 		
 		
